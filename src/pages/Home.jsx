@@ -1,8 +1,6 @@
 import React from 'react'
-import Header from '../components/Header'
 import Hero from '../components/Hero'
 import WhoweAre from '../components/WhoweAre'
-import Footer from '../components/Footer'
 import Achievements from '../components/Achievements'
 import Strategy from '../components/Strategy'
 import CardsHome from '../components/CardsHome'
@@ -17,7 +15,6 @@ const Home = () => {
   return (
     <>
       <div className='py-0'>
-        <Header />
         <Hero />
         <WhoweAre />
         <Achievements />
@@ -29,7 +26,6 @@ const Home = () => {
         <Faq />
         <TeamSection />
         <Gmail />
-        <Footer />
       </div>
     </>
   )

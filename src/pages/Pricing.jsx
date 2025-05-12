@@ -1,12 +1,15 @@
 import React from 'react'
 
-
-const AboutUs = () => {
+const Pricing = () => {
   return (
     <div>
-       
+
+
+
+
     </div>
   )
 }
 
-export default AboutUs
+
+export default Pricing
