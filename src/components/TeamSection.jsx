@@ -7,17 +7,17 @@ const teamMembers = [
   {
     name: 'Rajaseker Sundaresan',
     role: 'CEO & Founder',
-    image: '../src/assets/imgs/home/team1.png',
+    image: '../assets/imgs/home/team1.png',
   },
   {
     name: 'Sathishkumar Annadurai',
     role: 'Chief Product Officer',
-    image: '../src/assets/imgs/home/team2.png',
+    image: '../assets/imgs/home/team2.png',
   },
   {
     name: 'Murugan',
     role: 'Chief DevOps Expert',
-    image: '../src/assets/imgs/home/team3.png',
+    image: '../assets/imgs/home/team3.png',
   },
 ];
 

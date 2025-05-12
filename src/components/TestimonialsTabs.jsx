@@ -5,7 +5,7 @@ const testimonials = [
         name: "Rajaseker sundaresan",
         company: "Pixalive tech network",
         location: "Bengaluru, India",
-        image: '../src/assets/imgs/home/testimonial.png',
+        image: '../assets/imgs/home/testimonial.png',
         quote: "PIXALIVE TECHNOLOGY SERVICES is one of the India’s fastest growing Software Development Company",
         users: "10k",
         growth: "99%",
