@@ -2,14 +2,14 @@ import React from 'react';
 
 const WhoweAre = () => {
     return (
-        <section className="max-w-[1280px] mx-auto px-2 md:px-22 py-12 bg-white text-black mb-20">
+        <section className="max-w-[1100px] mx-auto px-2 md:px-22 py-12 bg-white text-black mb-20">
             <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start justify-between gap-12">
                 {/* Left - Label */}
                 <div className="text-sm font-[20px]-medium text-black w-full lg:w-[400px]">
                     Who we are
                 </div>
 
-                <div className="w-full lg:w-[800px]">
+                <div className="w-full lg:w-[850px]">
                     <h2 className="text-xl sm:text-2xl md:text-3xl lg:text-[39px] font-normal leading-[140%]">
                         Pixalive Technology Services provides smart software, IT consulting, and digital solutions to empower businesses.
                     </h2>

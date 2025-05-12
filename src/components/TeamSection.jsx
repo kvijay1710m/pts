@@ -2,33 +2,36 @@ import React from 'react';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay } from 'swiper/modules';
 import 'swiper/css';
+import rajasekar from '../assets/imgs/home/team1.png';
+import satish from '../assets/imgs/home/team2.png';
+import murugan from '../assets/imgs/home/team3.png';
 
 const teamMembers = [
   {
     name: 'Rajaseker Sundaresan',
     role: 'CEO & Founder',
-    image: '../assets/imgs/home/team1.png',
+    image: rajasekar,
   },
   {
     name: 'Sathishkumar Annadurai',
     role: 'Chief Product Officer',
-    image: '../assets/imgs/home/team2.png',
+    image: satish,
   },
   {
     name: 'Murugan',
     role: 'Chief DevOps Expert',
-    image: '../assets/imgs/home/team3.png',
+    image: murugan,
   },
 ];
 
 export default function TeamSection() {
   return (
-    <section className="px-6 md:px-16 py-12 bg-white text-gray-900">
+    <section className="px-6 max-w-[1260px] mx-auto md:px-16 py-12 bg-white text-gray-900">
       <div className="max-w-[1280px] mx-auto">
         <div className="flex flex-col lg:flex-row justify-between items-start gap-10">
           <div className="flex-1">
-            <div className="text-sm font-medium text-black mb-2">
-              Who we are
+            <div className="text-sm pl-2 font-medium text-black mb-2">
+              Who we are?
             </div>
           </div>
           <div className="mt-4 lg:mt-0">
@@ -75,7 +78,7 @@ export default function TeamSection() {
         </div>
 
         {/* Desktop static horizontal scroll */}
-        <div className="hidden lg:block mt-10 overflow-x-auto">
+        <div className="hidden lg:block mt-10">
           <div className="flex gap-4 min-w-[1200px]">
             {teamMembers.map((member, index) => (
               <div key={index} className="flex flex-col items-start p-4 min-w-[280px]">

@@ -3,29 +3,29 @@ import { Plus, Minus } from 'lucide-react';
 
 const faqs = [
     {
-        question: 'What services do you offer?',
+        question: 'What services does PTS offer?',
         answer:
-            'We offer UI/UX design, web and mobile app design, branding, logo creation, product design, and visual storytelling for digital products.',
+            'We specialize in custom software development, SaaS solutions, mobile and web app development, DevOps, UI/UX design, and emerging tech solutions including AI/ML, blockchain, and cloud infrastructure.',
     },
     {
-        question: 'What industries do you work with?',
+        question: 'Who are your ideal clients?',
         answer:
-            'We work with industries including fintech, e-commerce, healthcare, education, and entertainment.',
+            'We work with startups, SMEs, and large enterprises across industries like fintech, e-commerce, healthtech, and social media who are looking for scalable, secure, and innovative digital solutions.',
     },
     {
-        question: 'What is your design process?',
+        question: '. What industries have you worked with?',
         answer:
-            'Our design process includes research, wireframing, prototyping, user testing, and visual design implementation.',
+            'Our team has delivered successful projects in fintech, retail, e-learning, social media, healthcare, logistics, and enterprise solutions.',
     },
     {
-        question: 'Do you offer development services?',
+        question: 'Do you offer MVP development for startups?',
         answer:
-            'Yes, we provide frontend and backend development services using modern frameworks and technologies.',
+            'Yes. We provide rapid MVP development to help startups validate their ideas, attract investors, and scale efficiently.',
     },
     {
-        question: 'How long does a project take?',
+        question: 'What technologies do you use?',
         answer:
-            'Project timelines vary, but most projects are completed within 6–12 weeks depending on complexity and scope.',
+            'Our tech stack includes React, Node.js, MongoDB, Flutter, AWS, Azure, Docker, Kubernetes, AI/ML tools, and modern DevOps platforms like GitHub, Jenkins, SonarQube, and Blazemeter.',
     },
 ];
 
@@ -39,7 +39,7 @@ const Faq = () => {
     return (
         <div className="max-w-[1270px] mx-auto py-16">
             <div className="bg-white w-full max-w-[1280px] mx-auto px-4 sm:px-6 lg:px-20 py-12">
-                <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-10">
+                <div className="flex flex-col max-w-[1100px] mx-auto lg:flex-row justify-between items-start lg:items-center gap-10">
                     {/* Left Section */}
                     <div className="flex-1 -translate-x-2 sm:-translate-x-4 transform">
                         <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-tight">
@@ -68,7 +68,7 @@ const Faq = () => {
                 </div>
             </div>
 
-            <div className="mt-20 p-2 space-y-4 max-w-[990px] ml-auto pr-4">
+            <div className="mt-10 p-2 space-y-4 max-w-[980px] ml-auto pr-4">
                 {faqs.map((faq, index) => (
                     <div
                         key={index}
@@ -87,9 +87,8 @@ const Faq = () => {
                             </div>
                         </button>
                         <div
-                            className={`transition-all duration-300 ease-in-out overflow-hidden ${
-                                openIndex === index ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'
-                            }`}
+                            className={`transition-all duration-300 ease-in-out overflow-hidden ${openIndex === index ? 'max-h-40 opacity-100 mt-2' : 'max-h-0 opacity-0'
+                                }`}
                         >
                             <p className="text-[18px] text-[#5D5D5D]">
                                 {faq.answer}

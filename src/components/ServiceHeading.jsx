@@ -3,7 +3,7 @@ import { ArrowRight } from 'lucide-react';
 
 const ServiceHeading = () => {
     return (
-        <div className="bg-white w-full max-w-[1280px] mx-auto px-2 sm:px-6 lg:px-9 py-12">
+        <div className="bg-white w-full max-w-[1200px] mx-auto px-4 sm:px-6 lg:px-9 py-12">
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-10">
                 {/* Left Section */}
                 <div className="flex-1">

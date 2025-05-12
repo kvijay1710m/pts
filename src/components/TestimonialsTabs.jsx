@@ -1,11 +1,13 @@
 import React, { useState } from "react";
-
+import rajasekar from '../assets/imgs/home/testimonial.png'
+import penugonda from '../assets/imgs/home/penugonda.png'
+import dey from '../assets/imgs/home/dey.png'
 const testimonials = [
     {
         name: "Rajaseker sundaresan",
         company: "Pixalive tech network",
         location: "Bengaluru, India",
-        image: '../assets/imgs/home/testimonial.png',
+        image: rajasekar,
         quote: "PIXALIVE TECHNOLOGY SERVICES is one of the India’s fastest growing Software Development Company",
         users: "10k",
         growth: "99%",
@@ -14,17 +16,17 @@ const testimonials = [
         name: "Devendar Penugonda",
         company: "Krishivan Technologies",
         location: "Bengaluru, India",
-        image: "/images/devendar.jpg",
-        quote: "Krishivan is transforming sustainable agriculture using tech innovation with massive user adoption.",
+        image: penugonda,
+        quote: "Krishivan Technologies is an innovative startup dedicated to transforming agriculture through advanced methods, technologies, and services.",
         users: "8k",
         growth: "94%",
     },
     {
-        name: "Justin",
-        company: "Health Plan Markets",
-        location: "Orlando FL",
-        image: "/images/justin.jpg",
-        quote: "Health Plan Markets scaled quickly with the strategic tech partnership we formed.",
+        name: "Anirban Dey",
+        company: "Chaimug",
+        location: "West Bengal, India",
+        image: dey,
+        quote: "Chaimug is a one-of-a-kind social platform that replicates the offline chai shop experience—where you can order tea, read the news, share gossip, and connect with others over casual, meaningful conversations.",
         users: "12k",
         growth: "98%",
     },
@@ -35,7 +37,7 @@ export default function TestimonialsTabs() {
     const active = testimonials[activeIndex];
 
     return (
-        <div className="p-4 md:p-10 w-full md:w-[1280px] mx-auto mt-10">
+        <div className="p-4 md:px-18 w-full md:w-[1260px] mx-auto mt-10">
             <div className="flex justify-between items-start flex-wrap gap-2">
                 <h4 className="text-black text-[18px] mb-2">
                     What Our Clients Say
@@ -52,10 +54,12 @@ export default function TestimonialsTabs() {
                         <button
                             key={idx}
                             onClick={() => setActiveIndex(idx)}
-                            className={`text-left cursor-pointer p-3 border-t border-b ${idx === activeIndex
-                                ? "font-bold text-black border-t-black border-b-black"
-                                : "text-[#B0B0B0]"
+                            className={`text-left cursor-pointer p-3 
+                               ${idx === activeIndex
+                                    ? "font-bold text-black border-b-1 border-b-black"
+                                    : "text-[#B0B0B0] border-b "
                                 }`}
+
                         >
                             <p className="text-[20px]">{client.name}</p>
                             <p className="text-sm">{client.company}</p>
