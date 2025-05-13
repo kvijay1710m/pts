@@ -8,6 +8,7 @@ const AboutUs = () => {
     <div>
        <Herosection/>
        <TeamSection/>
+       
     </div>
   )
 }

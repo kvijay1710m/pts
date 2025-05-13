@@ -31,7 +31,7 @@ const team = [
 
   { name: "Kathirvel", role: "Software Developer", image: Kathirvel, alt: "Kathirvel" },
   { name: "Dhivinkumar", role: "Software Developer", image: Dhivinkumar, alt: "Dhivinkumar" },
-  { name: "Bharath Kumar", role: "Mobile Developer", image: BharathKumar, alt: "Bharath Kumar" },
+  { name: "Bharath Kumar", role: "Software Developer", image: BharathKumar, alt: "Bharath Kumar" },
   null,
 
   { name: "Pavan Kumar", role: "Junior Backend Developer", image: PavanKumar, alt: "Pavan Kumar" },

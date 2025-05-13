@@ -78,7 +78,7 @@ const Services = () => {
               {service.id}
             </span>
             <h3
-              className="text-black text-2xl mt-2.5 sm:text-3xl md:text-[42px] font-light leading-[130%] capitalize"
+              className="text-black text-2xl mt-2.5 sm:text-3xl md:text-[39px] font-light leading-[130%] capitalize"
               style={{ fontFamily: 'Lufga' }}
             >
               {service.title}

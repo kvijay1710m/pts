@@ -70,7 +70,7 @@ const PlansSection = () => {
   const filteredPlans = plans.filter(plan => plan.category === selectedCategory);
 
   return (
-    <section className="bg-white text-black font-medium px-6 md:px-16 py-16">
+    <section className="bg-white max-w-[1280px] mx-auto text-black font-medium px-2 md:px-16 py-16">
       {/* Heading */}
       <h2 className="text-4xl mb-4 font-md">
         Choose a Plan That<br />Suits Your Needs
@@ -86,7 +86,7 @@ const PlansSection = () => {
             LORA
           </button>
           <button
-            className={`px-4 py-1 rounded-r ${selectedCategory === 'ENTERPRISE' ? 'bg-black text-white' : 'bg-gray-200 text-black'}`}
+            className={`px-4 py-1 cursor-pointer rounded-r ${selectedCategory === 'ENTERPRISE' ? 'bg-black text-white' : 'bg-gray-200 text-black'}`}
             onClick={() => setSelectedCategory('ENTERPRISE')}
           >
             ENTERPRISE
@@ -116,7 +116,7 @@ const PlansSection = () => {
               </ul>
             </div>
             <button
-              className="mt-6 border border-black py-2 px-4 hover:bg-black hover:text-white transition"
+              className="mt-6 border cursor-pointer border-black py-2 px-4 hover:bg-black hover:text-white transition"
               onClick={handleContactClick}
             >
               Contact us
